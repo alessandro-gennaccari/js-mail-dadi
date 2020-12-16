@@ -6,6 +6,44 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    background-color: #231f20;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 4em;
+}
+
+p {
+    color: white;
+    font-size: 2em;
+}
+
+.container {
+    max-width: 1270px;
+    margin: auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 200px;
+    margin-right: 20px;
+}
+
+main .game {
     background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
 }

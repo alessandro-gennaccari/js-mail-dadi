@@ -11,16 +11,23 @@ generateNumber.addEventListener('click', function() {
     var playerNumber = Math.floor(Math.random() * 6) + 1; //Numero random generato per il Computer;
     var winner = 'Pareggio!';
 
+    // Se pareggio colora di giallo
+    document.getElementById('winner-is').className = 'yellow';
+    document.getElementById('winner-is').innerHTML = winner;
+
     if (cpuNumber > playerNumber) {
         winner = 'Hai Perso!';
+        document.getElementById('winner-is').className = 'red'; // colora di rosso se hai perso
+        document.getElementById('winner-is').innerHTML = winner;
     } else if ( cpuNumber < playerNumber) {
         winner= 'Hai vinto!';
+        document.getElementById('winner-is').className = 'green'; // colora di verde se hai vinto
+        document.getElementById('winner-is').innerHTML = winner;
     }
 
     // Stampa i numeri usciti ad entrambi i concorrenti ed il vincitore
     document.getElementById('computer-dice').innerHTML = 'E \' Uscito: ' + cpuNumber;
     document.getElementById('player-dice').innerHTML = 'E\' Uscito: ' + playerNumber;
-    document.getElementById('winner-is').innerHTML = winner;
 
     // Fa apparire il dado in base al numero uscito
     if (cpuNumber == 1) {

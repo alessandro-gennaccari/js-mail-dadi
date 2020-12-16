@@ -27,6 +27,8 @@ h3 {
 
 h4 {
     font-size: 1.5em;
+    margin-top: 20px;
+    color: darkcyan;
 }
 
 p {
@@ -56,7 +58,8 @@ p {
     background-color: #231f20;
     border-radius: 10px;
     border: 1px solid white;
-    padding: 20px 35px;
+    padding: 20px 0;
+    width: 50%;
     color: white;
     text-transform: uppercase;
 }
@@ -138,4 +141,18 @@ main .game {
 
 #winner-is {
     margin-bottom: 40px;
+
+    font-size: 2em;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: darkgoldenrod;
 }

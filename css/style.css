@@ -16,8 +16,8 @@ h1 {
 }
 
 h2 {
+    font-size: 2em;
     text-transform: uppercase;
-    font-size: 3.8em;;
 }
 
 h3 {
@@ -28,7 +28,7 @@ h3 {
 h4 {
     font-size: 1.5em;
     margin-top: 20px;
-    color: darkcyan;
+    color: rgb(160, 160, 160);
 }
 
 p {
@@ -53,9 +53,21 @@ p {
     display: none;
 }
 
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: darkgoldenrod;
+}
+
 #dice-roll,
 #dice-roll-reset{
-    background-color: #231f20;
+    background-color: #271f21;
     border-radius: 10px;
     border: 1px solid white;
     padding: 20px 0;
@@ -89,12 +101,11 @@ header img {
     max-width: 1270px;
     margin: auto;
     padding: 50px 0 20px;
-    background-color: #1f1a1b;
+    background-color: #271f21;
     border: 1px solid rgba(255, 255, 255, 0.404);
     border-radius: 10px;
     color: white;
 }
-
 
 main .row {
     display: flex;
@@ -114,6 +125,10 @@ main .game {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.text-winner img {
+    height: 150px;
 }
 
 .game .dice-right {
@@ -141,18 +156,5 @@ main .game {
 
 #winner-is {
     margin-bottom: 40px;
-
     font-size: 2em;
-}
-
-.red {
-    color: red;
-}
-
-.green {
-    color: green;
-}
-
-.yellow {
-    color: darkgoldenrod;
 }

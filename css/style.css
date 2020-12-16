@@ -15,6 +15,20 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: 3.8em;;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
 p {
     color: white;
     font-size: 2em;
@@ -23,6 +37,34 @@ p {
 .container {
     max-width: 1270px;
     margin: auto;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.block {
+   display: block
+}
+
+.none {
+    display: none;
+}
+
+#dice-roll,
+#dice-roll-reset{
+    background-color: #231f20;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#dice-roll:hover,
+#dice-roll-reset:hover {
+    cursor: pointer;
+    background-color: #3d3738;
 }
 
 header {
@@ -40,10 +82,60 @@ header img {
     margin-right: 20px;
 }
 
-main .game {
-    background-color: black;
-    border: 1px solid white;
+.main-container {
+    max-width: 1270px;
+    margin: auto;
+    padding: 50px 0 20px;
+    background-color: #1f1a1b;
+    border: 1px solid rgba(255, 255, 255, 0.404);
     border-radius: 10px;
+    color: white;
+}
+
+
+main .row {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+main .game {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.game .dice-left,
+.game .dice-right,
+.text-winner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game .dice-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game .dice-left-onscreen img,
+.game .dice-right-onscreen img {
+    height: 200px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+#computer-dice,
+#player-dice {
+    text-align: center;
+    margin-top: 20px;
+    color: crimson;
+}
+
+#winner-is {
+    margin-bottom: 40px;
 }
